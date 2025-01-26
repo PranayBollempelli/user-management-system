@@ -1,4 +1,4 @@
-import "../styles/UserList.css";
+import "../styles/userList.css";
 
 const UserList = ({ users, onEdit, onDelete }) => {
   const parseName = (name) => {
