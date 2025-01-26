@@ -18,11 +18,6 @@ A simple user management dashboard built with React and Vite. This application a
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
 ### Installation
 
 1. Clone the repository:
