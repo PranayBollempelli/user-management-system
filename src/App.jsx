@@ -51,26 +51,28 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>User Management System</h1>
-      <button className="add-button" onClick={() => setEditingUser({})}>
-        Add New User
-      </button>
+      <h1 className="app-header">User Management System</h1>
+      <div className="app-content">
+        <button className="add-user-button" onClick={() => setEditingUser({})}>
+          Add New User
+        </button>
 
-      {error && <div className="error-message">{error}</div>}
+        {error && <div className="error-message">{error}</div>}
 
-      {editingUser ? (
-        <UserForm
-          user={editingUser}
-          onSave={handleSave}
-          onCancel={() => setEditingUser(null)}
-        />
-      ) : (
-        <UserList
-          users={users}
-          onEdit={setEditingUser}
-          onDelete={handleDelete}
-        />
-      )}
+        {editingUser ? (
+          <UserForm
+            user={editingUser}
+            onSave={handleSave}
+            onCancel={() => setEditingUser(null)}
+          />
+        ) : (
+          <UserList
+            users={users}
+            onEdit={setEditingUser}
+            onDelete={handleDelete}
+          />
+        )}
+      </div>
     </div>
   );
 }
