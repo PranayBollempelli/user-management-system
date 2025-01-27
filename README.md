@@ -1,6 +1,6 @@
 # User Management Dashboard
 
-A simple user management dashboard built with React and Vite. This application allows you to view, add, edit, and delete users.
+The User Management Dashboard is a simple web application built with React and Vite. It allows users to perform CRUD (Create, Read, Update, Delete) operations on a list of users. The project uses Axios for making HTTP requests to a mock API provided by JSONPlaceholder.
 
 ## Features
 
