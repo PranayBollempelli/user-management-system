@@ -6,16 +6,13 @@ export const getUsers = async () => {
 };
 
 export const addUser = async (userData) => {
-  const response = await axiosInstance.post('/users', {
-    ...userData,
-    id: Date.now() // Temporary ID for local state
-  });
+  const response = await axiosInstance.post('/users', userData);
   return response.data;
 };
 
 export const editUser = async (userId, userData) => {
-  const response = await axiosInstance.put(`/users/${userId}`, userData);
-  return response.data;
+  // Simulate the edit operation locally
+  return { ...userData, id: userId };
 };
 
 export const deleteUser = async (userId) => {

@@ -11,7 +11,7 @@ const UserList = ({ users, onEdit, onDelete }) => {
 
   return (
     <div className="user-list">
-      {users.map((user) => {
+      {[...users].reverse().map((user) => {
         const { firstName, lastName } = parseName(user.name);
         return (
           <div key={user.id} className="user-card">

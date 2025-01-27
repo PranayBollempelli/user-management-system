@@ -32,6 +32,7 @@ function App() {
       } else {
         // New user - add
         const newUser = await addUser(userData);
+        newUser.id = users.length + 1; // Generate ID locally
         setUsers([...users, newUser]);
       }
       setEditingUser(null);
